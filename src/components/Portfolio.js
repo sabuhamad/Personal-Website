@@ -14,6 +14,7 @@ import {
 } from "@material-ui/core";
 import dna from "../images/3217_portrait.jpeg"
 import transcription from "../images/transcription.jpeg"
+import dune from "../images/dune.png"
 import code from "../images/coding.jpeg"
 import quadruped from "../images/quadruped.jpeg"
 import tunnelman from "../images/tunnelman.jpg"
@@ -73,6 +74,30 @@ const Portfolio = () => {
                 component = "img"
                 alt= "Project 1"
                 height="140"
+                image = {dune}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5">
+                      Dune Dashboard
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" components="p">
+                    Hired to create a Dune dashboard for $REFLEX, a web3 staking bot with a market cap at $4.7M, using SQL queries to calculate figures, such as all-time trading volume, USD distributed to stakers, percent of supply locked, etc. and visualize the statistics through graphs & tables
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://dune.com/unecessari/reflex-statistics")}>
+                        View Dashboard
+                    </Button>
+                </CardActions>
+        </Card>
+        </Grid>
+        {/* Project 1 */}
+        <Grid item xs={12} sm={6} md={4}>
+        <Card className = {classes.cardContainer}>
+                <CardMedia
+                component = "img"
+                alt= "Project 1"
+                height="140"
                 image = {website}
                 />
                 <CardContent>
@@ -91,6 +116,30 @@ const Portfolio = () => {
         </Card>
         </Grid>
         {/* Project 1 */}
+        <Grid item xs={12} sm={6} md={4}>
+        <Card className = {classes.cardContainer}>
+                <CardMedia
+                component = "img"
+                alt= "Project 1"
+                height="140"
+                image = {quadruped}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5">
+                      Quadruped Robot
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" components="p">
+                    Led a team of engineers to design, construct, and program a sophisticated, walking quadruped robot using Python for the software, 3D printed materials for the body, and a Raspberry Pi as the motherboard
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button className = {classes.customButton} borderColor ="#4682B4" endIcon ={<ArrowForward/>}onClick={() => redirect("https://github.com/UCLAX1/Boelt-Software")}>
+                        View Code
+                    </Button>
+                </CardActions>
+        </Card>
+        </Grid>
+        {/* Project  */}
         <Grid item xs={12} sm={6} md={4}>
         <Card className = {classes.cardContainer}>
                 <CardMedia

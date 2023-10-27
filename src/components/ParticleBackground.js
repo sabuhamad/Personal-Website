@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme=> ({
 const ParticleBackground = () => {
     const classes = useStyles()
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
+        //console.log(engine);
         await loadFull(engine);
     }, []);
 
@@ -70,13 +70,13 @@ const ParticleBackground = () => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 150,
+                        distance: 200,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -93,7 +93,7 @@ const ParticleBackground = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 35,
                     },
                     opacity: {
                         value: 0.5,

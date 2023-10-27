@@ -142,22 +142,23 @@ const Resume = () => {
                  Technology Management Technical Breadth
                 </Typography>
                 <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Relevant Courses: Algorithms and Complexity, Software Construction, Object-Oriented Programming, Data structures (Intro to CS I and II), Programming Languages, Probability, Discrete Structures, Linear Algebra
+                Relevant Courses: Theory of Computing, Algorithms and Complexity, Software Construction, Object-Oriented Programming, Data structures (Intro to CS I and II), Programming Languages, Probability, Discrete Structures, Linear Algebra
                 </Typography>
             </Box>
-            <Box component="div" className = {classes.timeLineItem}>
-                <Typography variant= "h5" align= "center" className = {classes.subHeading}>
+            <Box component="div" className={classes.timeLineItem}>
+                <Typography variant="h5" align="center" className={classes.subHeading}>
                     Top-Rated Seller
                 </Typography>
-                <Typography variant= "body1" align= "center" className = {classes.company}>
+                <Typography variant="body1" align="center" className={classes.company}>
                     eBay
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Generated $13,000 in revenue from an initial $300 investment by utilizing data-driven price-point analysis and strategic buying/selling techniques
-                Maintained a 100% positive feedback score with 188 reviews 
-
+                <Typography variant="subtitle1" align="left" className={classes.description} component="ul">
+                    <li>Closed to-date $15,000+ in revenue by buying and selling Pokemon trading cards on eBay from an initial investment of $300 (current value of assets if liquidated: around $45,000).</li>
+                    <li>Maintained 100% positive feedback over 190 reviews and 400+ products sold.</li>
+                    <li>Analyzed optimal price-points to purchase and sell various products and effectively marketed them to close sales.</li>
                 </Typography>
             </Box>
+
             <Box component="div" className = {classes.timeLineItem}>
                 <Typography variant= "h5" align= "center" className = {classes.subHeading}>
                     Web3 Investment
@@ -165,9 +166,9 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Self-Employed
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Managed a portfolio of $60,000+ in web3 assets from an initial investment of $2,000, conducting daily market analysis and project evaluation to identify and capitalize on lucrative web3 industry opportunities
-                Utilized data-driven insights to optimize investments and generate substantial returns
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component="ul">
+                <li>Managed a portfolio of $60,000+ in web3 assets from an initial investment of $2,000, conducting daily market analysis and project evaluation to identify and capitalize on lucrative web3 industry opportunities</li>
+                <li>Utilized data-driven insights to optimize investments and generate substantial returns</li>
                 </Typography>
             </Box>
             <Typography variant="h2" 
@@ -181,9 +182,10 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Bruin Ventures
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Demonstrated excellence as a Senior Analyst at two venture capital firms: Hamilton Ventures and Redbund Brands
-                Acquired valuable knowledge in venture capital and private investing through a rigorous associate training program, optimizing Go-To-Market strategies and developing roadmaps for numerous startups
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component="ul">
+                <li>Conducted a deep-dive analysis into dozens of startups that showed promise as potential investments within the industries of two venture capital firms: Redbud Brands (Medical) and Hamilton Ventures (Home Appliances) & presented the findings to general partners at each firm.</li>
+                <li>Awarded the BV "Moonshot Award" in recognition of exceptional contributions in club involvement and outstanding project leadership</li> 
+
                 </Typography>
             </Box>
             <Typography variant="h2" 
@@ -197,19 +199,22 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Dipnmix
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Devised and implemented customer acquisition strategies, transforming a local dessert business into a franchisable brand. Achieved a 100% increase in customer acquisition by refining marketing strategies and optimizing in-store customer experience
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Devised and implemented customer acquisition strategies, transforming a local dessert business into a recognizable brand at UCLA </li>
+                <li>Achieved a 100% increase in customer acquisition by refining marketing strategies and optimizing the in-store customer experience</li>
+
                 </Typography>
             </Box>
             <Box component="div" className = {classes.timeLineItem}>
                 <Typography variant= "h5" align= "center" className = {classes.subHeading}>
-                    Web3 Consultant & Community Expert
+                    Web3 Business Development Intern
                 </Typography>
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Nastie Labs
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                    Hired as an advisor at Nastie Labs, a software development startup that focuses on blockchain technology to develop community-focused NFTs, Play-and-Earn gaming, and other projects
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component="ul">
+                <li>Advised a software development startup specializing in community-driven NFTs & Play-to-Earn gaming on company growth strategies.</li> 
+                <li>Collaborated with workers from Animoca Brands and ex-Marvel artist Walter McDaniels to integrate blockchain technology into the movie production industry and helped them leverage their backgrounds to grow the company</li>
                 </Typography>
             </Box>
             <Box component="div" className = {classes.timeLineItem}>
@@ -219,10 +224,10 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Non-Fungible Studio
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Spearheaded the creation of a web3 management and incubation service platform for innovative NFT projects and companies
-                Formed a strategic partnership with Dissrup, an industry-leading curated art marketplace, driving $1 million+ in revenue
-                Boosted Dissrup’s conversion rate by 25% through marketing and business development consultation
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Spearheaded the creation of a web3 management and incubation service platform for innovative NFT projects and companies.</li>
+                <li>Formed a strategic partnership with Dissrup, an industry-leading curated art marketplace, boosting their conversion rate by around 50%</li> 
+
 
                 </Typography>
             </Box>
@@ -237,8 +242,13 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Genies
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Headed a 7-person team to collect data on the target audience in addition to devising a method to quantitatively analyze the data for Genies, a web3 avatar creation startup valued at $1 billion (investors and board members such as former CEO of Disney, Robert Iger). Presented a final deliverable encompassing the 10 weeks of research to the CEO along with the head of R&D 
+                <Typography variant = "subtitle1" align = "center" className = {classes.descriptiion}>
+                Genies is a web3 avatar creation startup valued at $1 billion (investors and board members such as former CEO of Disney, Robert Iger).
+                </Typography>
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Led a 7-person team tasked with determining the most influential subgroup of Genies' target audience</li>
+                <li>Divided the GenZ target audience into subgroups and developed a method to quantitatively analyze social media influence across these groups, conducted SWOT analysis on key competitors, and presented findings to the CEO & Head of R&D</li>
+
                 </Typography>
             </Box>
             <Box component="div" className = {classes.timeLineItem}>
@@ -248,8 +258,8 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     X1 Robotics
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Engaged in cutting-edge robotics projects as a software engineer within UCLA’s prestigious robotics club under ASME (American Society of Mechanical Engineers)
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Engaged in cutting-edge robotics projects as a software engineer within UCLA’s prestigious robotics club under ASME (American Society of Mechanical Engineers)</li>
                 </Typography>
             </Box>
             <Box component="div" className = {classes.timeLineItem}>
@@ -259,8 +269,22 @@ const Resume = () => {
                 <Typography variant= "body1" align= "center" className = {classes.company}>
                     Visa
                 </Typography>
-                <Typography variant= "subtitle1" align= "center" className = {classes.description}>
-                Directed a team of 6 in a comprehensive analysis of cybersecurity, focusing on threat detection, hunting techniques, and key industry players for Visa, the global leader in digital payment solutions
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Led a 6-person team in a comprehensive analysis of cybersecurity, focusing on threat detection and hunting techniques in addition to the identification of key companies and recent innovations in the field which could directly be applied to Visa</li>
+                <li>Analyzed strategies for threat detection/hunting involving AI and data science techniques (SOAR, Autonomous Anomaly Response, etc.) and ranked them by importance to Visa; presented findings to the entire cybersecurity team</li>
+                </Typography>
+            </Box>
+            <Box component="div" className = {classes.timeLineItem}>
+                <Typography variant= "h5" align= "center" className = {classes.subHeading}>
+                    Business Development Intern
+                </Typography>
+                <Typography variant= "body1" align= "center" className = {classes.company}>
+                    Azimov, Inc.
+                </Typography>
+                <Typography variant= "subtitle1" align= "left" className = {classes.description} component = "ul">
+                <li>Led the development of a pitch deck for VC fundraising: summarized the value proposition of Otherhalf, Azimov’s 3D AI Companion app, conducted competitor analysis, and estimated projected revenue based on calculations of TAM, SAM, number of active users, and MoM growth</li>
+                <li>Secured Azimov's acceptance into the Nvidia Inception Program, facilitating access to valuable resources and networks, and enhancing the startup’s credibility and visibility in the AI space</li>
+                <li>Conceptualized and designed the complete UI/UX for the web application, leveraging competitor traffic data to identify and implement features proven to drive organic growth</li>
                 </Typography>
             </Box>
         </Box>
