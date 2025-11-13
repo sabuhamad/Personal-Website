@@ -1,4 +1,6 @@
 import React from 'react';
+import { withExperiment } from "../../probat/runtime";
+import { PROBAT_COMPONENTS, PROBAT_REGISTRIES } from "../../probat/index";
 import {makeStyles} from "@material-ui/core/styles";
 import Typed from 'react-typed';
 import {
@@ -8,6 +10,8 @@ import {
     Box
 } from "@material-ui/core";
 import avatar from "../avatar.png";
+
+const __PROBAT_KEY__ = "src/components/Header.js";
 
 // CSS STYLES
 const useStyles = makeStyles(theme=> ({
@@ -62,4 +66,10 @@ const Header = () => {
   );
 };
 
-export default Header
+export default (() => {
+  const meta = PROBAT_COMPONENTS[__PROBAT_KEY__];
+  const reg  = PROBAT_REGISTRIES[__PROBAT_KEY__] as Record<string, React.ComponentType<any>> | undefined;
+  return (meta?.proposalId && reg)
+    ? withExperiment<any>(Header as any, { proposalId: meta.proposalId, registry: reg })
+    : Header;
+})();
