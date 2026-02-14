@@ -19,7 +19,8 @@
     "react-tsparticles": "^2.9.3",
     "react-typed": "^1.2.0",
     "tsparticles": "^2.9.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@probat/react": "^0.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
